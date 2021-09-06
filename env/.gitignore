@@ -1,0 +1,8 @@
+!.gitignore
+
+!*.yml
+!*.yaml
+!*.txt
+
+!README.md
+!LICENSE
