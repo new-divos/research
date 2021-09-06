@@ -1,0 +1,77 @@
+{
+	"folders": [
+		{
+			"name": "research",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"terminal.integrated.profiles.windows": {
+			"Anaconda Command Prompt": {
+				"path": "C:\\Windows\\System32\\cmd.exe",
+				"args": [
+					"/K",
+					"C:\\tools\\Anaconda3\\Scripts\\activate.bat C:\\tools\\Anaconda3"
+				]
+			},
+			"Anaconda PowerShell": {
+				"source": "PowerShell",
+				"args": [
+					"-ExecutionPolicy",
+					"ByPass",
+					"-NoExit",
+					"-Command",
+					"C:\\tools\\Anaconda3\\shell\\condabin\\conda-hook.ps1",
+					";conda activate 'C:\\tools\\Anaconda3'"
+				]
+			}
+		},
+		"terminal.integrated.defaultProfile.windows": "Anaconda PowerShell",
+
+		// !Deprecated, delete in the future.
+		"terminal.integrated.shell.windows": "PowerShell",
+		"terminal.integrated.shellArgs.windows": [
+			"-ExecutionPolicy",
+			"ByPass",
+			"-NoExit",
+			"-Command",
+			"C:\\tools\\Anaconda3\\shell\\condabin\\conda-hook.ps1",
+			";conda activate 'C:\\tools\\Anaconda3'"
+		],
+		"terminal.integrated.env.osx": {
+			"PYTHONPATH": "${workspaceFolder}"
+		},
+		"terminal.integrated.env.linux": {
+			"PYTHONPATH": "${workspaceFolder}"
+		},
+		"terminal.integrated.env.windows": {
+			"PYTHONPATH": "${workspaceFolder}",
+			"PYTHON_INSTALL_LOC": "C:\\tools\\Anaconda3\\envs\\research\\python.exe"
+		},
+
+		"files.exclude": {
+			".pytest_cache": true,
+			".mypy_cache": true,
+			"__pycache__": true
+		},
+
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#809ad4",
+			"activityBar.activeBorder": "#a7385b",
+			"activityBar.background": "#809ad4",
+			"activityBar.foreground": "#15202b",
+			"activityBar.inactiveForeground": "#15202b99",
+			"activityBarBadge.background": "#a7385b",
+			"activityBarBadge.foreground": "#e7e7e7",
+			"statusBar.background": "#5a7cc7",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#809ad4",
+			"titleBar.activeBackground": "#5a7cc7",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#5a7cc799",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "#5a7cc7"
+	}
+}
