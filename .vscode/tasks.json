@@ -1,0 +1,67 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+                "args": [
+                    "-ExecutionPolicy",
+                    "ByPass",
+                    "-Command",
+                    "C:\\tools\\Anaconda3\\shell\\condabin\\conda-hook.ps1",
+                    ";conda activate 'C:\\tools\\Anaconda3'",
+                    ";"
+                ]
+            }
+        }
+    },
+    "tasks": [
+        {
+            "label": "git-checkout",
+            "type": "shell",
+            "command": "git checkout develop"
+        },
+        {
+            "label": "git-pull",
+            "type": "shell",
+            "command": "git pull --rebase"
+        },
+        {
+            "label": "init",
+            "dependsOrder": "sequence",
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "dependsOn": [
+                "git-checkout",
+                "git-pull"
+            ]
+        },
+        {
+            "label": "black",
+            "type": "shell",
+            "command": "conda run -n research black ${workspaceFolder}"
+        },
+        {
+            "label": "mypy",
+            "type": "shell",
+            "command": "conda run -n research mypy ${workspaceFolder}"
+        },
+        {
+            "label": "flake8",
+            "type": "shell",
+            "command": "conda run -n research flake8 ${workspaceFolder}"
+        },
+        {
+            "label": "check",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "black",
+                "mypy",
+                "flake8"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "files.autoSave": "onFocusChange",
+
+    "editor.formatOnSave": false,
+    "[python]": {
+        "editor.formatOnSave": true,
+    },
+    "editor.fontFamily": "Fira Code", 
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+
+    "terminal.integrated.profiles.windows": {
+        "Anaconda Command Prompt": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": [ 
+                "/K", 
+                "C:\\tools\\Anaconda3\\Scripts\\activate.bat C:\\tools\\Anaconda3"
+            ]
+        },
+        "Anaconda PowerShell": {
+            "source": "PowerShell",
+            "args": [
+                "-ExecutionPolicy",
+                "ByPass",
+                "-NoExit",
+                "-Command",
+                "C:\\tools\\Anaconda3\\shell\\condabin\\conda-hook.ps1",
+                ";conda activate 'C:\\tools\\Anaconda3'"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Anaconda PowerShell",
+
+    // !Deprecated, delete in the future.
+    "terminal.integrated.shell.windows": "PowerShell",
+    "terminal.integrated.shellArgs.windows" : [
+        "-ExecutionPolicy",
+        "ByPass",
+        "-NoExit",
+        "-Command",
+        "C:\\tools\\Anaconda3\\shell\\condabin\\conda-hook.ps1",
+        ";conda activate 'C:\\tools\\Anaconda3'"
+    ],
+
+    "terminal.integrated.env.osx": {"PYTHONPATH": "${workspaceFolder}"},
+    "terminal.integrated.env.linux": {"PYTHONPATH": "${workspaceFolder}"},
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "PYTHON_INSTALL_LOC": "C:\\tools\\Anaconda3\\envs\\research\\python.exe"
+    },
+    "python.envFile": "${workspaceFolder}/.env",
+
+    "python.defaultInterpreterPath": "${env:PYTHON_INSTALL_LOC}",
+    "python.terminal.activateEnvironment": true,
+    "python.condaPath": "conda",
+
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/tests"
+    ],
+
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
+
+    "python.formatting.blackPath": "black",
+    "python.formatting.blackArgs": ["${workspaceFolder}"],
+    
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.cwd": "${workspaceFolder}",
+
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "flake8",
+    
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyPath": "mypy",
+    "python.linting.mypyArgs": [
+        "${workspaceFolder}",
+        "--follow-imports=silent",
+        "--ignore-missing-imports",
+        "--show-column-numbers"
+    ]
+}
