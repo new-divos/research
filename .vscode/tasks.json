@@ -29,6 +29,11 @@
             "command": "git pull --rebase"
         },
         {
+            "label": "git-pull-env",
+            "type": "shell",
+            "command": "git subtree pull --prefix env https://github.com/new-divos/research-env.git main --squash"
+        },
+        {
             "label": "init",
             "dependsOrder": "sequence",
             "runOptions": {
