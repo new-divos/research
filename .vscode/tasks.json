@@ -2,22 +2,10 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
-    "windows": {
-        "options": {
-            "shell": {
-                "executable": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-                "args": [
-                    "-ExecutionPolicy",
-                    "ByPass",
-                    "-Command",
-                    "C:\\tools\\Anaconda3\\shell\\condabin\\conda-hook.ps1",
-                    ";conda activate 'C:\\tools\\Anaconda3'",
-                    ";"
-                ]
-            }
-        }
-    },
     "tasks": [
+
+        // git
+
         {
             "label": "git-checkout",
             "type": "shell",
@@ -44,10 +32,13 @@
                 "git-pull"
             ]
         },
+
+        // Python
+
         {
             "label": "black",
             "type": "shell",
-            "command": "conda run -n research black ${workspaceFolder}"
+            "command": "conda run -n research black ${workspaceFolder}",
         },
         {
             "label": "mypy",
@@ -57,7 +48,7 @@
         {
             "label": "flake8",
             "type": "shell",
-            "command": "conda run -n research flake8 ${workspaceFolder}"
+            "command": "conda run -n research flake8 ${workspaceFolder}",
         },
         {
             "label": "check",

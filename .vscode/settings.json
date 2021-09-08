@@ -29,18 +29,9 @@
             ]
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Anaconda PowerShell",
 
-    // !Deprecated, delete in the future.
-    "terminal.integrated.shell.windows": "PowerShell",
-    "terminal.integrated.shellArgs.windows" : [
-        "-ExecutionPolicy",
-        "ByPass",
-        "-NoExit",
-        "-Command",
-        "C:\\tools\\Anaconda3\\shell\\condabin\\conda-hook.ps1",
-        ";conda activate 'C:\\tools\\Anaconda3'"
-    ],
+    "terminal.integrated.defaultProfile.windows": "Anaconda PowerShell",
+    "terminal.integrated.automationShell.windows": "cmd.exe",
 
     "terminal.integrated.env.osx": {"PYTHONPATH": "${workspaceFolder}"},
     "terminal.integrated.env.linux": {"PYTHONPATH": "${workspaceFolder}"},
