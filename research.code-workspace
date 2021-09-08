@@ -7,6 +7,8 @@
 	],
 	"settings": {
 		"files.autoSave": "onFocusChange",
+		"editor.minimap.enabled": false,
+
 		"terminal.integrated.profiles.windows": {
 			"Anaconda Command Prompt": {
 				"path": "C:\\Windows\\System32\\cmd.exe",
