@@ -6,7 +6,7 @@ import random
 import typing as t
 
 import simpy
-from simpy.core import SimTime
+
 
 RANDOM_SEED: t.Final[int] = 43
 SIM_TIME: t.Final[int] = 240
