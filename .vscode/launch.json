@@ -17,6 +17,13 @@
             "request": "launch",
             "program": "${workspaceFolder}/scripts/visualization/examples/altair/seattle-weather.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
