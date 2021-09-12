@@ -46,6 +46,7 @@ dependencies:
   - opencv
   - openpyxl
   - pandas
+  - pandas-datareader
   - pillow
   - plotly
   - pre-commit
