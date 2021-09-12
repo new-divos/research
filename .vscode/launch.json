@@ -19,6 +19,13 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "SimPy: Theater",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/simulation/examples/theater.py",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Current File",
             "type": "python",
             "request": "launch",
