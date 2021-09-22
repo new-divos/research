@@ -9,7 +9,6 @@ dependencies:
   - cudnn=7.6
   - h5py
   - hdf5
-  - alembic
   - altair
   - altair_saver
   - altair_viewer
@@ -17,45 +16,38 @@ dependencies:
   - bokeh
   - boto3
   - catboost
-  - celery
   - click
+  - dash
   - datapane>=0.10.0
   - deap
+  - dlib
   - flake8
-  - flask
-  - flask-login
-  - flask-migrate
-  - flask-moment
-  - flask-sqlalchemy
-  - flask-wtf
-  - fbprophet
   - gdown
   - gym
   - ipykernel
-  - itsdangerous
-  - jinja2
+  - ipywidgets
+  - isort
   - joblib
   - jupyter
+  - jupyter_contrib_nbextensions
   - jupyterlab
   - lightgbm
   - matplotlib
   - mypy
-  - nb_black
   - networkx
+  - nltk
   - numpy
   - opencv
   - openpyxl
   - pandas
   - pandas-datareader
+  - panel
   - pillow
   - plotly
   - pre-commit
   - pyarrow
-  - pylint
   - pyspark
   - pytest
-  - pytest-cov
-  - pytest-env
   - python-dotenv
   - pytorch
   - py-xgboost
@@ -67,7 +59,6 @@ dependencies:
   - scikit-learn
   - scikit-image
   - simpy
-  - sqlalchemy
   - statsmodels
   - sympy
   - tabulate
@@ -80,8 +71,6 @@ dependencies:
   - umap-learn
   - vega
   - vega_datasets
-  - werkzeug
-  - wtforms
   - pip
   - pip:
       - sklearn-deap2
