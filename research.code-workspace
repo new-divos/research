@@ -29,6 +29,7 @@
 				]
 			}
 		},
+		"terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
 		"terminal.integrated.defaultProfile.windows": "Anaconda PowerShell",
 		"terminal.integrated.automationShell.windows": "cmd.exe",
 
